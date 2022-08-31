@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.main_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#bio{
+    display:flex;
+    justify-content: space-between;
+    /* column-gap: 20%; */
+    background-color: rgba(0, 0, 255, 0.856);
+    color: #fff;
+    height:10%;
+    padding-right:100px;
+    
+}
+#bio h1{
+    text-transform: uppercase;
+}
+.contact_heading{
+    font-weight: bold;
+}
+.section{
+    padding-left:30px;
+    padding-right: 30px;
+}
+h3{
+    border-bottom: 1px solid #000;
+}
+.skills {
+    display:flex;
+    justify-content: space-between;
+    padding-right:100px;
+}
+.footer{
+    background-color:rgba(0, 0, 255, 0.856);
+    height:20px;
+}

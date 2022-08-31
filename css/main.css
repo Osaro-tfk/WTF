@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color:aqua;
+    background-image: url('../images/image1.jpg');
+}
+#header{
+    background-color:rgb(155, 41, 41);
+}

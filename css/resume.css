@@ -1,0 +1,58 @@
+main{
+    width:80%;
+    border: 1px solid #000;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+#table-section1{
+    /* width:70%; */
+}
+/* td{
+   border: 1px solid #000;
+} */
+#table-section2{
+    vertical-align: top;
+    width: 400px;
+}
+#contact{
+    background-color: rgba(20, 20, 20, 0.884);
+    padding:20px;
+    color: #ffff;
+    border-radius: 5px;
+}
+
+
+#skills-certificates{
+    background-color: rgba(20, 20, 20, 0.884);
+    margin-top:10px;
+    height: 900px;
+    margin-bottom: 5px;
+    color: #ffff;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+#skills{
+    margin-top: 30px;
+}
+#skills p{
+    padding:5px;
+    background-color:rgba(255, 255, 255, 0.747);
+    color: #000;
+    width:fit-content;
+    border-radius: 5px;
+}
+
+#certificates{
+    margin-top: 30px;
+}
+
+.image-text{
+    display:inline-flex;
+    gap: 5px;
+}
+img{
+    border-radius: 5px;
+}
