@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Positioning</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src=''></script>
+</head>
+<body>
+    <div class="first" style="height: 400px; width: 100%; background-color: aqua;" >
+        <div id="relative_div" style="height:200px; width:200px; background-color:yellow"></div>
+    </div>
+    <div class="second">some text</div>
+
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+        }
+        .first{
+            position:relative;
+        }
+        #relative_div{
+            position: relative;
+            top:300px;
+            border-radius: 50%;
+            left: 200px;
+        }
+        .second{
+            background-color: bisque;
+            margin: 0 auto 0 auto;
+            /* position:absolute; */
+            top:100px;
+            left:100px;
+            height: 600px;
+            width:80%;
+            z-index:4;
+        }
+    </style>
+</body>
+</html>

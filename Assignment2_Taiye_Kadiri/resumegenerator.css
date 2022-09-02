@@ -25,7 +25,7 @@ body{
     background-color: rgba(100, 175, 240);
     border: 1px solid #ccc;
     padding:20px;
-    background-image: url(../images/office_desk.webp);
+    background-image: url(office_desk.webp);
 }
 form{
     background-color: rgba(49, 48, 48, 0.651);
@@ -68,6 +68,7 @@ form textarea{
 .cv_container{
     margin: 50px auto 50px;
     width: 60%;
+    height:80%;
     background-color: #fff;
     border: 1px solid #ccc;
     box-sizing: border-box;
