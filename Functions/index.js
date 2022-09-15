@@ -275,3 +275,6 @@ var awardCert = function(grade, cert){
 console.log(awardCert(80,2))
 console.log(awardCert(75,3))
 console.log(awardCert(95,3))
+
+
+// Switch cases & loops

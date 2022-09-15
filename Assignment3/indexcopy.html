@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Baby Food Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <p class="heading">Click on an image to get a name and a price</p>
+    <div class="main_container">
+      <div class="food_container">
+        <div class="bf_img">
+          <img
+            src="images/cerelac_wheat.jpg"
+            alt="Cerelac image"
+            id="cerelac"
+          />
+        </div>
+        <div class="bf_img">
+          <img src="images/friso_gold.jpg" alt="Friso gold image" id="friso" />
+        </div>
+        <div class="bf_img">
+          <img src="images/nan.jpg" alt="NAN image" id="nan" />
+        </div>
+        <div class="bf_img">
+          <img src="images/nutriben.jpg" alt="Nutriben image" id="nutriben" />
+        </div>
+        <div class="bf_img">
+          <img src="images/nutribom.jpg" alt="Nutribom image" id="nutribom" />
+        </div>
+        <div class="bf_img">
+          <img src="images/sma_gold.jpg" alt="SMA gold image" id="sma" />
+        </div>
+      </div>
+      <div class="outputs">
+        <p>Baby Food</p>
+        <div class="output1">
+          <p id="babyfood_name"></p>
+        </div>
+
+        <p id="price">Price</p>
+        <div class="output2">
+          <p id="babyfood_price"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // inputs
+      var cerelac = document.querySelector("#cerelac");
+      var friso = document.querySelector("#friso");
+      var nan = document.querySelector("#nan");
+      var nutriben = document.querySelector("#nutriben");
+      var nutribom = document.querySelector("#nutribom");
+      var sma = document.querySelector("#sma");
+
+      // output
+
+      var babyfood_name = document.querySelector("#babyfood_name");
+      var babyfood_price = document.querySelector("#babyfood_price");
+
+      // baby food objects
+
+      var cerelac_obj = {
+        name: "cerelac",
+        price: "N25000.00",
+      };
+
+      var friso_obj = {
+        name: "Friso",
+        price: "N30000.00",
+      };
+      var nan_obj = {
+        name: "NAN",
+        price: "N15000.00",
+      };
+      var nutriben_obj = {
+        name: "Nutriben",
+        price: "N10000.00",
+      };
+      var nutribom_obj = {
+        name: "Nutribom",
+        price: "N10000.00",
+      };
+      var sma_obj = {
+        name: "SMA",
+        price: "N20000.00",
+      };
+
+      cerelac.addEventListener("click", cel_click_hand, false);
+      friso.addEventListener("click", fris_click_hand, false);
+      nan.addEventListener("click", nan_click_hand, false);
+      nutriben.addEventListener("click", ben_click_hand, false);
+      nutribom.addEventListener("click", bom_click_hand, false);
+      sma.addEventListener("click", sma_click_hand, false);
+
+      function cel_click_hand() {
+        babyfood_price.innerHTML = cerelac_obj.price;
+        babyfood_name.innerHTML = cerelac_obj.name;
+      }
+      function fris_click_hand() {
+        babyfood_price.innerHTML = friso_obj.price;
+        babyfood_name.innerHTML = friso_obj.name;
+      }
+      function nan_click_hand() {
+        babyfood_price.innerHTML = nan_obj.price;
+        babyfood_name.innerHTML = nan_obj.name;
+      }
+      function ben_click_hand() {
+        babyfood_price.innerHTML = nutriben_obj.price;
+        babyfood_name.innerHTML = nutriben_obj.name;
+      }
+      function bom_click_hand() {
+        babyfood_price.innerHTML = nutribom_obj.price;
+        babyfood_name.innerHTML = nutribom_obj.name;
+      }
+      function sma_click_hand() {
+        babyfood_price.innerHTML = sma_obj.price;
+        babyfood_name.innerHTML = sma_obj.name;
+      }
+    </script>
+  </body>
+</html>
