@@ -26,15 +26,15 @@ function result(action){
 }
 
 
-function switchToIf() {
-    var babyfood = document.getElementById('bFood').value;
-    if(babyfood == "SMA" || babyfood == "Cerelac"){
-        result("do a purchase")
-    }
-    else{
-        result("return home")
-    }
-}
+// function switchToIf() {
+//     var babyfood = document.getElementById('bFood').value;
+//     if(babyfood == "SMA" || babyfood == "Cerelac"){
+//         result("do a purchase")
+//     }
+//     else{
+//         result("return home")
+//     }
+// }
 
 
 // loops:running a code more than once
