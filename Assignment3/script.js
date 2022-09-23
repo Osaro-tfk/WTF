@@ -13,7 +13,7 @@ var babyfood_name = document.getElementById("babyfood_name");
 var babyfood_price = document.getElementById("babyfood_price");
 
 
-// creates functions for the outputs of the click events on the variables
+// create functions for the outputs of the click events on the variables
 function cel_click_hand(){
     babyfood_name.innerHTML = "Cerelac";
     babyfood_price.innerHTML = "N25000.00";
@@ -40,7 +40,7 @@ function sma_click_hand(){
 }
 
 
-// create event listeners for each of the variables using addEventListener
+// create event listeners for each of the variables using addEventListener. Basically linking the declared variables to the output functions upon a click event.
 
 cerelac.addEventListener("click", cel_click_hand, false);
 friso.addEventListener("click", fris_click_hand, false);

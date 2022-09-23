@@ -1,0 +1,20 @@
+.container-fluid{
+    margin-top:50px;
+}
+#form_wrapper{
+    background-image: url(resources/office_desk.webp);
+    padding:20px;
+}
+form{
+    background-color: rgba(49, 48, 48, 0.651);
+    padding: 10px;
+}
+
+#cv_header{
+    background-color: rgba(100, 175, 240);
+    color: #fff;
+}
+#cv_footer{
+    height: 30px;
+    background-color: rgba(100, 175, 240);
+}

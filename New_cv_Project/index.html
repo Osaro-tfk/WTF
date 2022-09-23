@@ -16,22 +16,29 @@
         <div class="row">
 
             <div class="col-4" id="form_container">
-                <div class="col-12">
+                <div class="col-12" id="form_wrapper">
                     <form>
-                        <div class="input-group">
+                        <div class="input-group mb-3">
                             <span class="input-group-text">First and last name</span>
                             <input type="text" aria-label="First name" class="form-control">
                             <input type="text" aria-label="Last name" class="form-control">
                         </div>
-                        
-                        <p>Enter Address</p>
-                        <input type="text">
-                        <p>Enter Phone Number</p>
-                        <input type="tel">
-                        <p>Enter Email Address</p>
-                        <input type="email">
-                        <p>Enter a summary of yourself</p>
-                        <textarea name="" id="" cols="20" rows="10"></textarea>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Address</span>
+                            <input type="text" aria-label="Address" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Phone Number</span>
+                            <input type="tel" aria-label="phone_number" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Email Address</span>
+                            <input type="email" aria-label="email_Address" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Enter a summary of yourself</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
                         <p>Kindly enter your skills</p>
                         <input type="text">
                     </form>
