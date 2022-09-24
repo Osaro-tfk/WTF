@@ -20,27 +20,66 @@
                     <form>
                         <div class="input-group mb-3">
                             <span class="input-group-text">First and last name</span>
-                            <input type="text" aria-label="First name" class="form-control">
-                            <input type="text" aria-label="Last name" class="form-control">
+                            <input type="text" aria-label="First name" class="form-control" id="firstNameInput">
+                            <input type="text" aria-label="Last name" class="form-control" id="lastNameInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Address</span>
-                            <input type="text" aria-label="Address" class="form-control">
+                            <input type="text" aria-label="Address" class="form-control" id="homeAddressInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Phone Number</span>
-                            <input type="tel" aria-label="phone_number" class="form-control">
+                            <input type="tel" aria-label="phone_number" class="form-control" id="phoneInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Email Address</span>
-                            <input type="email" aria-label="email_Address" class="form-control">
+                            <input type="email" aria-label="email_Address" class="form-control" id="emailAddressInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Enter a summary of yourself</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <textarea class="form-control" aria-label="With textarea" id="shortBioInput"></textarea>
                         </div>
                         <p>Kindly enter your skills</p>
-                        <input type="text">
+                        <input type="text" id="skills">
+                        <button id="skillsBtn">Add</button>
+                        <div class="form_experience">
+                            <p>Kindly indicate your experience:</p>
+                            <input type="text" placeholder="Role?" id="role">
+                            <label for="start_date" >Start Date</label>
+                            <input type="date" placeholder="Start Year" name="start_date" id="startDate">
+                            <label for="end_date">End Date</label>
+                            <input type="date" placeholder="End Year" name="end_date" id="endDate">
+                            <input type="text" placeholder="Organisation/Company" id="orgName">
+                            <input type="text" placeholder="Location" id="orgLtn">
+                        </div>
+                        <div class="form_accomplishment">
+                            <p>Share what you accomplished on the job: </p>
+                            <input type="text" id="acc">
+                            <button id="accBtn">Add</button>
+                        </div>
+                        <div class="form_education">
+                            <p>Education:</p>
+                            <input type="text" placeholder="Qualification"id="qual">
+                            <input type="text" placeholder="Course of study" id="course">
+                            <input type="" placeholder="Year of completion" id="comYear">
+                            <input type="text" placeholder="Institution" id="inst">
+                            <input type="text" placeholder="Location of institution" id="instLtn">
+                            <button id="addQualBtn">Add</button>
+                        </div>
+                        <div class="form_languages">
+                            <p>Kindly specify what languages you speak and how fluent you are:</p>
+                            <input type="text" id="languages">
+                            <button id="langBtn">Add</button>
+                        </div>
+                        <div class="form_certification">
+                            <p>Share what relevant certifications you have:</p>
+                            <input type="text" id="certs">
+                            <button id="certsBtn">Add</button>
+                        </div>
+                        <div class="form_button">
+                            <button id="save">Save</button>
+                            <button id="preview">Preview</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -48,8 +87,8 @@
             <div class="col-7" id="cv_container">
                 <div class="row" id="cv_header">
                     <div class="col-6" id="cv_names">
-                        <h1>CHRISTOPHER</h1>
-                        <h1>MORGAN</h1>
+                        <h1 id="firstName">CHRISTOPHER</h1>
+                        <h1 id="lastName">MORGAN</h1>
                     </div>
                     <div class="col-6">
                         <p><b>Address:</b></p>
@@ -86,7 +125,7 @@
                     </div>
                     <div class="col-12">
                         <h3>Experience</h3>
-                        <p><b>Web Developer</b> - 09/2015 to 05/2019</p>
+                        <p><b>Web Developer</b> - <span id="cvStartDate">09/2015</span>  to <span id="cvEndDate">05/2019</span> </p>
                         <p><b>Luna Web Design, </b>New York</p>
                         <ul>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloribus!</li>
@@ -119,5 +158,8 @@
        
 
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
