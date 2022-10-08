@@ -29,11 +29,9 @@ if(localStorage.getItem('gallery') == null){
 }
 
 
-
 // function will be called once on page load
 dataStore()
-
-    
+  
 
 addTocarList = function(){
     // creating objects
@@ -92,28 +90,61 @@ function photoUpload(){
 function loadData(){
 var data = JSON.parse(localStorage.getItem('gallery'))
 var result = data.map(function card(dt){
-  return `<div class="col-md-3">
-  <div class="card" style="width: 18rem;">
+  return `<div class="col-md-3"id="cardHolder">
+  <div class="card" style="width: 18rem;" id="cardContent">
     <img src="${dt.image}" class="card-img-top" alt="...">
     <div class="card-body">
     <h5 class="card-title">${dt.make} - ${dt.model}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button class="btn btn-outline-primary" id="delete">Delete</button>
+    <button class="btn btn-warning col-4 deleteClass" id="delete" >Remove</button>
+    <button type="button" class="btn btn-secondary position-absolute  end-0 me-3 editClass" id="edit">Edit</button>
     </div>
     </div>
     </div>`
 })
 
  document.getElementById('carList').innerHTML = result.join("")
-
+ deleteItem()
 }
 loadData()
 
-var button = document.getElementById('delete');
+// function to confirm delete
+function confirmDelete(id){
+  swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.isConfirmed){
+      fetchDelete(id)
+      swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
+}
 
-button.addEventListener('click', function handleClick(event) {
-  button.remove();
-});
+// function to get items to delete from local storage
+function fetchDelete(id){
+  cars.splice(id, 1)
+  localStorage.setItem('gallery', JSON.stringify(cars))
+  loadData()
+}
 
+//Function to tell which button should be trigger for delete
+function deleteItem(){
+  var deleteButtons = document.getElementsByClassName('deleteClass');
 
-
+  for (let i = 0; i < cars.length; i++){
+    deleteButtons[i].onclick = function(){
+      confirmDelete(i)
+    }
+  }
+}
+deleteItem()

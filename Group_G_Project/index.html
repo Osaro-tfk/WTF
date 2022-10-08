@@ -26,9 +26,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -85,19 +82,23 @@
    <div class="row mt-4" style="text-align: center;margin-top: 20px;" >
     <h4>Our Cars </h4>
    </div>
-   <div class="row">
+   <div class="row" id="carList">
 
    </div> 
   </div>
 
 
   <style>
+    #delete{
+      display: none;
+    }
     .container-fluid{
     padding-left: 0px;
     padding-right: 0px;
     }
   </style>
    <!--Banner Area-->
-    <script src='script.js'></script>  
+    <!-- <script src='script.js'></script>  -->
+    <script src='addition.js'></script>   
 </body>
 </html>
