@@ -1,0 +1,22 @@
+[
+    {
+        "fellowName":"Taiye",
+        "fellowAge": 28,
+        "residence":"Nigeria"
+    },
+    {
+        "fellowName":"Norma",
+        "fellowAge": 26,
+        "residence":"USA"
+    },
+    {
+        "fellowName":"Kessiena",
+        "fellowAge": 28,
+        "residence":"Nigeria"
+    },
+    {
+        "fellowName":"Olivia",
+        "fellowAge": 25,
+        "residence":"Nigeria"
+    }
+]
